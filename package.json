@@ -1,0 +1,28 @@
+{
+  "name": "e2b-desktop-gemini",
+  "version": "1.0.0",
+  "description": "E2B Desktop Sandbox with Gemini 2.0 Flash for Computer Use",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --loader ts-node/esm src/index.ts",
+    "dev": "node --loader ts-node/esm --watch src/index.ts"
+  },
+  "keywords": ["e2b", "desktop", "gemini", "computer-use", "ai-agent"],
+  "author": "Matrix Agent",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^2.0.44",
+    "@e2b/desktop": "^2.2.2",
+    "@types/node": "^24.10.1",
+    "ai": "^5.0.107",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "zod": "^4.1.13"
+  }
+}
